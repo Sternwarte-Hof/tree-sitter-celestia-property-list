@@ -1,0 +1,27 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "celestia_property_list",
+      "camelcase": "CelestiaPropertyList",
+      "scope": "source.celestia-property-list",
+      "file-types": [
+        "ssc",
+        "stc",
+        "dsc",
+        "cfg",
+        "ctx"
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "description": "Tree-sitter parser family for Celestia Property List documents",
+    "authors": [
+      {
+        "name": "Tobias Feigel"
+      }
+    ],
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,610 @@
+[
+  {
+    "type": "anonymous_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "property_group",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "array",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "array",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "property_group",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "boolean",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "configuration_block",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "property_group",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Configuration",
+            "named": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "dsc_declaration",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "property_group",
+            "named": true
+          }
+        ]
+      },
+      "kind": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "Galaxy",
+            "named": false
+          },
+          {
+            "type": "Globular",
+            "named": false
+          },
+          {
+            "type": "Nebula",
+            "named": false
+          },
+          {
+            "type": "OpenCluster",
+            "named": false
+          },
+          {
+            "type": "galaxy",
+            "named": false
+          },
+          {
+            "type": "globular",
+            "named": false
+          },
+          {
+            "type": "nebula",
+            "named": false
+          },
+          {
+            "type": "opencluster",
+            "named": false
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "named_block",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "property_group",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "property_entry",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      },
+      "unit": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "unit",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "array",
+            "named": true
+          },
+          {
+            "type": "boolean",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "property_group",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "property_group",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "property_entry",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "anonymous_block",
+          "named": true
+        },
+        {
+          "type": "configuration_block",
+          "named": true
+        },
+        {
+          "type": "dsc_declaration",
+          "named": true
+        },
+        {
+          "type": "named_block",
+          "named": true
+        },
+        {
+          "type": "property_entry",
+          "named": true
+        },
+        {
+          "type": "ssc_declaration",
+          "named": true
+        },
+        {
+          "type": "stc_declaration",
+          "named": true
+        },
+        {
+          "type": "virtual_texture_block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ssc_declaration",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "property_group",
+            "named": true
+          }
+        ]
+      },
+      "disposition": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Add",
+            "named": false
+          },
+          {
+            "type": "Modify",
+            "named": false
+          },
+          {
+            "type": "Replace",
+            "named": false
+          }
+        ]
+      },
+      "kind": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "AltSurface",
+            "named": false
+          },
+          {
+            "type": "Body",
+            "named": false
+          },
+          {
+            "type": "Location",
+            "named": false
+          },
+          {
+            "type": "ReferencePoint",
+            "named": false
+          },
+          {
+            "type": "SurfaceObject",
+            "named": false
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      },
+      "parent": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "stc_declaration",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "property_group",
+            "named": true
+          }
+        ]
+      },
+      "catalog_number": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "disposition": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Add",
+            "named": false
+          },
+          {
+            "type": "Modify",
+            "named": false
+          },
+          {
+            "type": "Replace",
+            "named": false
+          }
+        ]
+      },
+      "kind": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "Barycenter",
+            "named": false
+          },
+          {
+            "type": "Star",
+            "named": false
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "unit",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "virtual_texture_block",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "property_group",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "VirtualTexture",
+            "named": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": "Add",
+    "named": false
+  },
+  {
+    "type": "AltSurface",
+    "named": false
+  },
+  {
+    "type": "Barycenter",
+    "named": false
+  },
+  {
+    "type": "Body",
+    "named": false
+  },
+  {
+    "type": "Configuration",
+    "named": false
+  },
+  {
+    "type": "Galaxy",
+    "named": false
+  },
+  {
+    "type": "Globular",
+    "named": false
+  },
+  {
+    "type": "Location",
+    "named": false
+  },
+  {
+    "type": "Modify",
+    "named": false
+  },
+  {
+    "type": "Nebula",
+    "named": false
+  },
+  {
+    "type": "OpenCluster",
+    "named": false
+  },
+  {
+    "type": "ReferencePoint",
+    "named": false
+  },
+  {
+    "type": "Replace",
+    "named": false
+  },
+  {
+    "type": "Star",
+    "named": false
+  },
+  {
+    "type": "SurfaceObject",
+    "named": false
+  },
+  {
+    "type": "VirtualTexture",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "galaxy",
+    "named": false
+  },
+  {
+    "type": "globular",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "nebula",
+    "named": false
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "opencluster",
+    "named": false
+  },
+  {
+    "type": "string",
+    "named": true
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]

@@ -1,0 +1,14 @@
+[package]
+name = "tree-sitter-celestia-property-list"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Tobias Feigel <info@feigel.it>"]
+repository = "https://github.com/fits-ki/tree-sitter-celestia-property-list"
+description = "Tree-sitter parser family for Celestia Property List documents"
+
+[dependencies]
+tree-sitter = "=0.25.10"
+
+[build-dependencies]
+cc = "=1.4.0"
